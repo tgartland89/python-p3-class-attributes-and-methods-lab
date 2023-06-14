@@ -16,25 +16,25 @@ class Song:
         self.add_to_artists(artist)
         self.add_to_genre_count(genre)
         self.add_to_artist_count(artist)
-# ERROR lib/testing/song_test.py - TypeError: Song() takes no arguments
+# Clears ERROR lib/testing/song_test.py - TypeError: Song() takes no arguments
 # Interrupted: 1 error during collection
 
     @classmethod
     def add_song_to_count(cls):
         cls.count += 1
-# ERROR lib/testing/song_test.py - AttributeError: 'Song' object has no attribute 'add_song_to_count'
+# Clears ERROR lib/testing/song_test.py - AttributeError: 'Song' object has no attribute 'add_song_to_count'
 
     @classmethod
     def add_to_genres(cls, genre):
         if genre not in cls.genres:
             cls.genres.append(genre)
-# ERROR lib/testing/song_test.py - AttributeError: 'Song' object has no attribute 'add_to_genres'
+# Clears ERROR lib/testing/song_test.py - AttributeError: 'Song' object has no attribute 'add_to_genres'
 
     @classmethod
     def add_to_artists(cls, artist):
         if artist not in cls.artists:
             cls.artists.append(artist)
-# ERROR lib/testing/song_test.py - AttributeError: 'Song' object has no attribute 'add_to_artists'
+# Clears ERROR lib/testing/song_test.py - AttributeError: 'Song' object has no attribute 'add_to_artists'
 
     @classmethod
     def add_to_genre_count(cls, genre):
@@ -42,7 +42,7 @@ class Song:
             cls.genre_count[genre] += 1
         else:
             cls.genre_count[genre] = 1
-# ERROR lib/testing/song_test.py - AttributeError: 'Song' object has no attribute 'add_to_genre_count'
+# Clears ERROR lib/testing/song_test.py - AttributeError: 'Song' object has no attribute 'add_to_genre_count'
 
     @classmethod
     def add_to_artist_count(cls, artist):
@@ -50,9 +50,9 @@ class Song:
             cls.artist_count[artist] += 1
         else:
             cls.artist_count[artist] = 1
-# ERROR lib/testing/song_test.py - AttributeError: 'Song' object has no attribute 'add_to_artist_count'
+#  Clears ERROR lib/testing/song_test.py - AttributeError: 'Song' object has no attribute 'add_to_artist_count'
 
-# all the above clears:
+# all the above clears all of this 
 # Class "Song" in song.py instantiates with a name, artist, and genre. .                                                                                  
 # Class "Song" in song.py counts the total number of Song objects. .                                                                                   
 # Class "Song" in song.py keeps track of all Song genres. .                                                                                                
